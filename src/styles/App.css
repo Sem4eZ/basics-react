@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.App {
+  width: 1000px;
+}
+
+.post {
+  margin-top: 15px;
+  display: flex;
+  padding: 15px;
+  border: 2px solid teal;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.post__btns {
+  display: flex;
+}
+.post-enter {
+  transform: translateX(-1350px);
+}
+.post-enter-active {
+  transform: translateX(0px);
+  transition: transform 500ms ease-in;
+}
+.post-exit {
+  opacity: 1;
+}
+.post-exit-active {
+  transform: translateX(-1350px);
+  transition: transform 500ms ease-in;
+}
+
+.page__wrapper {
+  margin-top: 30px;
+  display: flex;
+}
+
+.page {
+  padding: 5px 15px;
+  border: 1px solid teal;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.page__current {
+  border: 2px solid orange;
+  font-weight: bold;
+}
+
+.navbar {
+  height: 80px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 15xp;
+  background: teal;
+}
+
+.navbar__links {
+  margin-left: 50px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.nav__link {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 30px;
+}
